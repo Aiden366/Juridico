@@ -6,4 +6,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Created on : 14 mar 2024, 11:14:48
     Author     : juanr
 */
-
+.login{
+    -fx-background-image:url('juridico.jpg');
+    -fx-background-repeat:no-repeat;
+    -fx-background-size: stretch;
+}
