@@ -11,3 +11,32 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     -fx-background-repeat:no-repeat;
     -fx-background-size: stretch;
 }
+Button{
+    -fx-background-color: yellow;
+    -fx-border-color: black;
+    -fx-text-fill: black;
+    -fx-border-radius: 10,10,10,10;
+    -fx-background-radius:15,15,15,15;
+    -fx-border-width: 2;
+}
+
+Button:hover{
+    -fx-background-color: black;
+    -fx-border-color: yellow;
+    -fx-text-fill: white;
+}
+TextField{
+    -fx-border-radius: 10,10,10,10;
+    -fx-background-radius:15,15,15,15;
+    -fx-border-width: 2;
+}
+PasswordField{
+    -fx-border-radius: 10,10,10,10;
+    -fx-background-radius:15,15,15,15;
+    -fx-border-width: 2;
+}
+MenuButton{
+    -fx-border-radius: 10,10,10,10;
+    -fx-background-radius:15,15,15,15;
+    -fx-border-width: 2;
+}
