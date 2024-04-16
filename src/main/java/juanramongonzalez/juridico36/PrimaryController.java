@@ -6,11 +6,12 @@ import javafx.scene.control.TextField;
 
 public class PrimaryController {
     @FXML
-    private TextField nombre;
+    private TextField usuario;
+    private TextField contraseña;
     
-
+    
     @FXML
     private void switchToSecondary() throws IOException {
-        App.setRoot("secondary");
+        App.setRoot("principal");
     }
 }

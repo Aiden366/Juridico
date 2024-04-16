@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="450.0" prefWidth="625.0" styleClass="login" stylesheets="@../../../java/juanramongonzalez/juridico36/FondoJuridico.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juanramongonzalez.juridico36.PrimaryController">
+<AnchorPane prefHeight="450.0" prefWidth="625.0" styleClass="login" stylesheets="@FondoJuridico.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juanramongonzalez.juridico36.PrimaryController">
    <children>
       <Button fx:id="primaryButton" layoutX="179.0" layoutY="291.0" onAction="#switchToSecondary" prefHeight="31.0" prefWidth="260.0" text="Iniciar Sesion" textFill="#ff9500">
          <font>

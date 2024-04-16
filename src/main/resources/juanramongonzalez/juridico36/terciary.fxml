@@ -9,12 +9,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="450.0" prefWidth="625.0" styleClass="login" stylesheets="@../../../java/juanramongonzalez/juridico36/FondoJuridico.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juanramongonzalez.juridico36.SecondaryController">
+<AnchorPane prefHeight="450.0" prefWidth="625.0" styleClass="login" stylesheets="@FondoJuridico.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juanramongonzalez.juridico36.TerciaryController">
    <children>
-      <Button fx:id="secondaryButton" layoutX="237.0" layoutY="306.0" onAction="#switchToPrimary" prefHeight="26.0" prefWidth="150.0" text="Registrar" />
-      <TextField alignment="CENTER" layoutX="238.0" layoutY="74.0" text="Nombre Completo" />
-      <TextField alignment="CENTER" layoutX="238.0" layoutY="123.0" text="Numero Telefononico" />
-      <TextField alignment="CENTER" layoutX="238.0" layoutY="171.0" text="Correo Electronico" />
+      <Button fx:id="secondaryButton" layoutX="237.0" layoutY="325.0" onAction="#switchPrincipal" prefHeight="26.0" prefWidth="150.0" text="Registrar" />
+      <TextField alignment="CENTER" layoutX="238.0" layoutY="93.0" />
+      <TextField alignment="CENTER" layoutX="238.0" layoutY="142.0" />
+      <TextField alignment="CENTER" layoutX="238.0" layoutY="190.0" />
       <Label layoutX="179.0" layoutY="28.0" text="REGISTRAR CLIENTE" textFill="#e1ff00">
          <font>
             <Font size="30.0" />
@@ -22,12 +22,32 @@
       </Label>
       <Accordion layoutX="212.0" layoutY="197.0" />
       <Accordion layoutX="212.0" layoutY="197.0" />
-      <MenuButton alignment="CENTER" layoutX="237.0" layoutY="212.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Caso">
+      <MenuButton alignment="CENTER" layoutX="237.0" layoutY="231.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Caso">
         <items>
           <MenuItem mnemonicParsing="false" text="Demandante" />
           <MenuItem mnemonicParsing="false" text="Demandado" />
         </items>
       </MenuButton>
-      <TextField alignment="CENTER" layoutX="237.0" layoutY="257.0" text="Demanda" />
+      <TextField alignment="CENTER" layoutX="238.0" layoutY="286.0" />
+      <Label layoutX="237.0" layoutY="74.0" text="Nombre Completo" textFill="#51d6b4">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="126.0" text="Numero Telefonico" textFill="#51d6b4">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="174.0" text="Correo Electronico" textFill="#51d6b4">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="270.0" text="Demanda" textFill="#51d6b4">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
