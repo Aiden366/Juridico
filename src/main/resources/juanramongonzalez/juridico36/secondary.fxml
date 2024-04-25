@@ -9,32 +9,38 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="625.0" styleClass="login" stylesheets="@FondoJuridico.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juanramongonzalez.juridico36.SecondaryController">
    <children>
-        <Button fx:id="secondaryButton" layoutX="237.0" layoutY="306.0" onAction="#switchPrincipal" prefHeight="26.0" prefWidth="150.0" text="Registrar" />
-      <TextField alignment="CENTER" layoutX="238.0" layoutY="95.0" />
-      <TextField alignment="CENTER" layoutX="238.0" layoutY="147.0" />
+        <Button fx:id="secondaryButton" layoutX="237.0" layoutY="356.0" onAction="#switchPrincipal" prefHeight="26.0" prefWidth="150.0" text="Registrar" />
+      <TextField fx:id="nombre" alignment="CENTER" layoutX="238.0" layoutY="95.0" />
+      <TextField fx:id="telefono" alignment="CENTER" layoutX="237.0" layoutY="199.0" />
       <Label layoutX="162.0" layoutY="28.0" text="REGISTRAR ABOGADO" textFill="#e1ff00">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <PasswordField alignment="CENTER" layoutX="238.0" layoutY="199.0" />
-      <PasswordField layoutX="238.0" layoutY="255.0" />
+      <PasswordField fx:id="contraseña" layoutX="238.0" layoutY="316.0" />
       <Label layoutX="238.0" layoutY="74.0" text="Nombre Completo" textFill="#e1ff00">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="238.0" layoutY="127.0" text="Numero de telefono" textFill="#e1ff00">
+      <Label layoutX="245.0" layoutY="179.0" text="Numero de telefono" textFill="#e1ff00">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="238.0" layoutY="179.0" text="Contraseña" textFill="#e1ff00">
+      <Label layoutX="238.0" layoutY="127.0" text="Correo Electronico" textFill="#e1ff00">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="238.0" layoutY="235.0" text="Verificar Contraseña" textFill="#e1ff00">
+      <Label layoutX="238.0" layoutY="296.0" text="Contraseña" textFill="#e1ff00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="correo" layoutX="234.0" layoutY="147.0" />
+      <TextField fx:id="especialidad" layoutX="234.0" layoutY="259.0" />
+      <Label layoutX="239.0" layoutY="239.0" text="Especialidad" textFill="#e1ff00">
          <font>
             <Font size="14.0" />
          </font>
