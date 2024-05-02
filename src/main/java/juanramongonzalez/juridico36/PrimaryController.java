@@ -22,4 +22,8 @@ public class PrimaryController {
 //        Connection connection;
         App.setRoot("principal");
     }
+    @FXML
+    private void botonsalir(){
+       System.exit(0);
+    }
 }

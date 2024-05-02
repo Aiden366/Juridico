@@ -21,6 +21,10 @@ public class SecondaryController {
     private TextField especialidad;
     
     
+    @FXML
+    private void switchPrincipal2() throws IOException{
+        App.setRoot("principal");
+    }
      @FXML
     private void switchPrincipal() throws IOException, SQLException {
         App.setRoot("principal");
@@ -61,42 +65,7 @@ public class SecondaryController {
             statement.close();
             connection.close();
         } catch (SQLException e) {
-            e.printStackTrace();
-//        String url = "jdbc:mysql://localhost:3306/mydb";
-//        try {
-//            Connection conexion=null;
-//            Connection c = DriverManager.getConnection(url, "root", "root");
-//            System.out.println("Se conecto");
-//            Statement stm = c.createStatement();
-//                        PreparedStatement insertar = conexion.prepareStatement("insert into abogados values(?,?,?,?,?,?)");
-//                        insertar.setString(0, "0");
-//                        insertar.setString(1, nombre.getText().trim());
-//                        insertar.setString(2, correo.getText().trim());        
-//                        insertar.setString(3, telefono.getText().trim());
-//                        insertar.setString(4, especialidad.getText().trim());              
-//                        insertar.setString(5, contraseña.getText().trim()); 
-//        
-//                        insertar.executeUpdate();
-//                        String sql = "insert into abogados values(0,'nombre.getText()','telefono.getText()','correo.getText()','especialidad.getText()','contraseña.getText()')";
-//                        boolean r =stm.execute(sql);
-//                        if(!r){
-//                          System.out.println("insertado correctamente");
-//                          }else{
-//                              System.out.println("no se pudo insertar");
-//    } 
-//        } catch (SQLException ex) {
-//            System.out.println("No se conecto");
-//            Logger.getLogger(SecondaryController.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-       
-       
-    } 
-    }
-    
-    
-    
-    @FXML
-    private void switchToPrimary() throws IOException {
-        App.setRoot("terciary");
+            e.printStackTrace(); 
+        } 
     }
 }

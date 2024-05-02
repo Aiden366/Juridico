@@ -19,24 +19,35 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchClientes" prefHeight="50.0" prefWidth="150.0" text="Clientes" />
-                        <Button layoutX="25.0" layoutY="107.0" mnemonicParsing="false" onAction="#switchAbogados" prefHeight="50.0" prefWidth="150.0" text="Abogados" />
+                        <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchClientes" prefHeight="50.0" prefWidth="150.0" text="Nuevo Clientes" />
+                        <Button layoutX="25.0" layoutY="107.0" mnemonicParsing="false" onAction="#switchAbogados" prefHeight="50.0" prefWidth="150.0" text="Nuevo Abogados" />
                      </children></AnchorPane>
             </content>
           </TitledPane>
             <TitledPane animated="false" text="Demandas">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Ver Demandas" />
+                        <Button layoutX="25.0" layoutY="99.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Nueva Demanda" />
+                     </children></AnchorPane>
               </content>
             </TitledPane>
           <TitledPane animated="false" text="Abogados">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="25.0" layoutY="74.0" mnemonicParsing="false" onAction="#switchConsulAbogados" prefHeight="50.0" prefWidth="150.0" text="Consultar Abogados" />
+                     </children></AnchorPane>
             </content>
           </TitledPane>
           <TitledPane animated="false" text="Notas">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Ver Notas" />
+                        <Button layoutX="25.0" layoutY="99.0" mnemonicParsing="false" onAction="#switchNotas" prefHeight="50.0" prefWidth="150.0" text="Nueva Nota" />
+                     </children></AnchorPane>
             </content>
           </TitledPane>
         </panes>

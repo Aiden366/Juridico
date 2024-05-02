@@ -24,4 +24,12 @@ public class PrincipalController {
     private void switchClientes() throws IOException {
         App.setRoot("terciary");
     }
+    @FXML
+    private void switchNotas() throws IOException{
+        App.setRoot("Notas");
+    }
+    @FXML
+    private void switchConsulAbogados() throws IOException{
+        App.setRoot("aboagdo");
+    }
 }

@@ -9,57 +9,42 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 /**
  *
  * @author juanr
  */
-public class TerciaryController {
+public class NotasController {
     @FXML
-    private TextField nombre;
+    private TextArea nota;
     @FXML
-    private TextField telefono;
-    @FXML
-    private TextField correo;
-    @FXML
-    private TextField firma;
-    @FXML
-    private TextField demanda;
-    @FXML
-    private void switchPrincipal() throws IOException {
+    private TextField abogado;
+    
+    public void botonAgragarNota() throws IOException{
         App.setRoot("principal");
-        
-        // Replace with your database connection details
-        String dbURL = "jdbc:mysql://localhost:3306/mydb";
+         String dbURL = "jdbc:mysql://localhost:3306/mydb";
         String username = "root";
         String password = "root";
 
         // Replace with the actual text field values
-        String name = nombre.getText();
-        String correoE = correo.getText();
-        String tel = telefono.getText();
-        String fir = firma.getText();
-        String dem = demanda.getText();
+        String not = nota.getText();
+        String abogad = abogado.getText();
 
         try {
             // Establish connection
             Connection connection = DriverManager.getConnection(dbURL, username, password);
 
             // Create PreparedStatement
-            String sql = "INSERT INTO actor VALUES (?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO notas VALUES (?, ?, ?)";
             PreparedStatement statement = connection.prepareStatement(sql);
 
             // Set PreparedStatement parameters
             statement.setInt(1,0);
-            statement.setString(2, name);
-            statement.setString(3, correoE);
-            statement.setString(4, tel);
-            statement.setString(5, fir);
-//            statement.setString(6, dem);
+            statement.setString(2, not);
+            statement.setString(3, abogad);
 
             // Execute PreparedStatement
             statement.executeUpdate();
@@ -70,13 +55,7 @@ public class TerciaryController {
             statement.close();
             connection.close();
         } catch (SQLException e) {
-            e.printStackTrace(); 
-        } 
+            e.printStackTrace();
+        }
     }
-    @FXML
-    private void switchPrincipal2() throws IOException {
-        App.setRoot("principal");
-    }
-   
-    
 }
