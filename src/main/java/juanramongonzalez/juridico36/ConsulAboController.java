@@ -33,6 +33,7 @@ public class ConsulAboController {
     private TableColumn especialidad;
           @FXML
     private TableView<String> tableView;
+    private String sql = "";
 @FXML         
 private void botonMostrarAbogados(){
 //      // Conectar a la base de datos y recuperar datos
@@ -56,19 +57,22 @@ try {
             // Conexión a la base de datos MySQL
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "root");
             Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM abogados");
+            sql = "SELECT * FROM abogados";
+            stmt=conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
             
             // Limpiar TableView antes de cargar nuevos datos
-//            tableView.getItems().clear();
+            tableView.getItems().clear();
 
             // Recorrer los resultados y agregarlos a la TableView
             while (rs.next()) {
-                tableView.getItems().add(rs.getString("idAbogado"));
-//                tableView.getItems().add(rs.getString("Nombre"));
-//                tableView.getItems().add(rs.getString("Correo"));
-//                tableView.getItems().add(rs.getString("Telefono"));
-//                tableView.getItems().add(rs.getString("Especialidad"));
-//                tableView.getItems().add(rs.getString("Contraseña"));
+                int id = rs.getInt("idAbogado");
+//                tableView.getItems().add(rs.getString("idAbogado"));
+                tableView.getItems().add(rs.getString("Nombre"));
+                tableView.getItems().add(rs.getString("Correo"));
+                tableView.getItems().add(rs.getString("Telefono"));
+                tableView.getItems().add(rs.getString("Especialidad"));
+                tableView.getItems().add(rs.getString("Contrasena"));
             }
 
             // Cerrar conexiones

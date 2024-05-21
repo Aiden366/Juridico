@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="625.0" styleClass="login" stylesheets="@FondoJuridico.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juanramongonzalez.juridico36.NotasController">
    <children>
-      <Button layoutX="181.0" layoutY="373.0" onAction="#botonAgragarNota" prefHeight="31.0" prefWidth="260.0" text="Agregar Nota" textFill="#ff9500">
+      <Button layoutX="166.0" layoutY="373.0" onAction="#botonAgragarNota" prefHeight="36.0" prefWidth="154.0" text="Agregar Nota" textFill="#ff9500">
          <font>
             <Font size="15.0" />
          </font>
@@ -31,5 +31,10 @@
          </font>
       </Label>
       <TextArea fx:id="nota" layoutX="212.0" layoutY="106.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="335.0" layoutY="373.0" onAction="#switchPrincipal" prefHeight="36.0" prefWidth="154.0" text="Volver" textFill="#ff9500">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

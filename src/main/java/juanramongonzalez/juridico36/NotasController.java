@@ -23,6 +23,11 @@ public class NotasController {
     @FXML
     private TextField abogado;
     
+    @FXML
+private void switchPrincipal() throws IOException{
+        App.setRoot("principal");
+}
+
     public void botonAgragarNota() throws IOException{
         App.setRoot("principal");
          String dbURL = "jdbc:mysql://localhost:3306/mydb";

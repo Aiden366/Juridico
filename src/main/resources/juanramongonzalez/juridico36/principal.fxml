@@ -66,20 +66,20 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="528.0" prefWidth="1102.0">
                <children>
-                  <TableView layoutY="1.0" prefHeight="526.0" prefWidth="1113.0">
+                  <TableView fx:id="demandas" layoutX="-6.0" layoutY="1.0" prefHeight="526.0" prefWidth="1113.0">
                      <columns>
-                        <TableColumn prefWidth="75.0" text="Numero" />
-                        <TableColumn minWidth="0.0" prefWidth="64.00006103515625" text="Fecha" />
-                        <TableColumn minWidth="0.0" prefWidth="86.39996337890625" text="Juzgado" />
-                        <TableColumn prefWidth="101.60005187988281" text="Expediente" />
-                        <TableColumn prefWidth="87.20001220703125" text="Mesa" />
-                        <TableColumn prefWidth="90.4000244140625" text="Administrador" />
-                        <TableColumn prefWidth="85.60003662109375" text="Actor" />
-                        <TableColumn prefWidth="96.800048828125" text="Nombramiento" />
-                        <TableColumn prefWidth="119.199951171875" text="Area/departamento" />
-                        <TableColumn prefWidth="89.5999755859375" text="Asunto" />
-                        <TableColumn minWidth="0.0" prefWidth="114.39996337890625" text="Estado Procesal" />
-                        <TableColumn prefWidth="92.7999267578125" text="Amparos" />
+                        <TableColumn fx:id="numero" prefWidth="75.0" text="Numero" />
+                        <TableColumn fx:id="fecha" minWidth="0.0" prefWidth="64.00006103515625" text="Fecha" />
+                        <TableColumn fx:id="juzgado" minWidth="0.0" prefWidth="86.39996337890625" text="Juzgado" />
+                        <TableColumn fx:id="expediente" prefWidth="101.60005187988281" text="Expediente" />
+                        <TableColumn fx:id="mesa" prefWidth="87.20001220703125" text="Mesa" />
+                        <TableColumn fx:id="administrador" prefWidth="90.4000244140625" text="Administrador" />
+                        <TableColumn fx:id="actor" prefWidth="85.60003662109375" text="Actor" />
+                        <TableColumn fx:id="nombramiento" prefWidth="96.800048828125" text="Nombramiento" />
+                        <TableColumn fx:id="area" prefWidth="119.199951171875" text="Area/departamento" />
+                        <TableColumn fx:id="asunto" prefWidth="89.5999755859375" text="Asunto" />
+                        <TableColumn fx:id="estadoProcesal" minWidth="0.0" prefWidth="114.39996337890625" text="Estado Procesal" />
+                        <TableColumn fx:id="amparos" prefWidth="92.7999267578125" text="Amparos" />
                      </columns>
                   </TableView>
                </children>
